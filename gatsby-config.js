@@ -10,20 +10,14 @@ module.exports = {
     title: 'Checklist',
     description: "The protocols we follow for the things we can't automate yet.",
     author: '@atolye15',
-    siteUrl: 'https://checklist.atolye15.com',
+    siteUrl: 'https://checklists.kanvas.istanbul',
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-39803605-26',
-      },
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://checklist.atolye15.com`,
+        siteUrl: `https://checklists.kanvas.istanbul`,
         stripQueryString: true,
       },
     },
@@ -76,6 +70,12 @@ module.exports = {
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
         queries: process.env.ALGOLIA_SKIP_INDEX === 'false' ? queries : [],
         chunkSize: 10000,
+      },
+    },
+    {
+      resolve: '@mkitio/gatsby-theme-password-protect',
+      options: {
+        password: process.env.SITE_PASSWORD, // delete or `undefined` to disable password protection
       },
     },
 
