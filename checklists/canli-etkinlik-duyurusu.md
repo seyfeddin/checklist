@@ -10,7 +10,7 @@ featured: true
 - [ ] Kommunity görselini hazırla
 
 - [ ] Instagram görsellerini hazırla  
-      Story ve Post için ayrı ayrı.
+       Story ve Post için ayrı ayrı.
 
 - [ ] Mailchimp'ten yeni mail oluştur
 
@@ -19,5 +19,3 @@ featured: true
 - [ ] Kommunity'den yeni etkinlik oluştur
 
 - [ ] Twitter'dan Kommunity linkini paylaş
-
-- [ ] Join to your daily scrum meetings
